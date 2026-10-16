@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="Ilustración de CSS">
+  <rect width="640" height="320" fill="#F6F7F9"/>
+  <rect x="80" y="60" width="200" height="200" rx="16" fill="#FFFFFF" stroke="#0F1F3D" stroke-width="4"/>
+  <rect x="104" y="84" width="152" height="28" rx="6" fill="#0F1F3D"/>
+  <rect x="104" y="128" width="152" height="12" rx="6" fill="#98A2B3"/>
+  <rect x="104" y="150" width="120" height="12" rx="6" fill="#98A2B3"/>
+  <rect x="104" y="196" width="90" height="40" rx="8" fill="#C9972B"/>
+  <circle cx="400" cy="120" r="44" fill="#0F1F3D"/>
+  <circle cx="490" cy="120" r="44" fill="#C9972B"/>
+  <circle cx="445" cy="196" r="44" fill="#8A6416"/>
+  <text x="445" y="292" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#0F1F3D" text-anchor="middle">CSS</text>
+</svg>

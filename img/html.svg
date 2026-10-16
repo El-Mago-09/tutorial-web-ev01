@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="Ilustración de HTML">
+  <rect width="640" height="320" fill="#F6F7F9"/>
+  <rect x="120" y="40" width="400" height="240" rx="16" fill="#FFFFFF" stroke="#0F1F3D" stroke-width="4"/>
+  <rect x="120" y="40" width="400" height="40" rx="16" fill="#0F1F3D"/>
+  <rect x="120" y="64" width="400" height="16" fill="#0F1F3D"/>
+  <circle cx="148" cy="60" r="7" fill="#C9972B"/>
+  <circle cx="172" cy="60" r="7" fill="#FFFFFF"/>
+  <circle cx="196" cy="60" r="7" fill="#FFFFFF"/>
+  <text x="320" y="190" font-family="Consolas, monospace" font-size="72" font-weight="700" fill="#0F1F3D" text-anchor="middle">&lt;/&gt;</text>
+  <text x="320" y="250" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#8A6416" text-anchor="middle">HTML</text>
+</svg>

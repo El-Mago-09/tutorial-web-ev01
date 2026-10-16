@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="Ilustración de JavaScript">
+  <rect width="640" height="320" fill="#F6F7F9"/>
+  <rect x="200" y="90" width="240" height="80" rx="16" fill="#0F1F3D"/>
+  <text x="320" y="142" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle">Clic aquí</text>
+  <path d="M400 150 L400 230 L420 212 L436 248 L452 240 L436 206 L462 204 Z" fill="#FFFFFF" stroke="#0F1F3D" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M370 130 l-24 -24 M392 118 l0 -30 M414 130 l24 -24" stroke="#C9972B" stroke-width="6" stroke-linecap="round"/>
+  <text x="320" y="290" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#8A6416" text-anchor="middle">JavaScript</text>
+</svg>
