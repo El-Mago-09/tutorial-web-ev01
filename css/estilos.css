@@ -1,0 +1,340 @@
+/* Estilos del tutorial - GA6-220501096-AA4-EV01 */
+
+:root {
+    --color-principal: #0F1F3D;
+    --color-secundario: #C9972B;
+    --color-secundario-oscuro: #8A6416;
+    --color-fondo: #F6F7F9;
+    --color-blanco: #FFFFFF;
+    --color-texto: #333333;
+    --color-borde: #E4E7EC;
+    --sombra: 0 4px 16px rgba(15, 31, 61, 0.08);
+    --radio: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Encabezado */
+header {
+    background-color: var(--color-principal);
+    border-bottom: 4px solid var(--color-secundario);
+}
+
+header .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 64px;
+}
+
+.marca {
+    margin: 0;
+    font-weight: 700;
+    color: var(--color-blanco);
+}
+
+header nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Contenido */
+main {
+    padding-top: 40px;
+    padding-bottom: 56px;
+}
+
+h1 {
+    color: var(--color-principal);
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin: 0 0 16px;
+}
+
+h2 {
+    color: var(--color-principal);
+    font-size: 1.4rem;
+    margin: 32px 0 8px;
+}
+
+p {
+    margin: 0 0 16px;
+}
+
+a {
+    color: var(--color-principal);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--color-secundario);
+    outline-offset: 3px;
+}
+
+.intro,
+.indice,
+.tema {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 32px;
+    margin-bottom: 24px;
+}
+
+.indice h2 {
+    margin-top: 0;
+}
+
+/* Lista ordenada del índice */
+ol {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.lista-temas {
+    list-style: none;
+    counter-reset: tema;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-temas li {
+    counter-increment: tema;
+    margin-bottom: 12px;
+}
+
+.lista-temas a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.lista-temas a::before {
+    content: counter(tema);
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+.lista-temas a:hover {
+    background-color: var(--color-fondo);
+    border-color: var(--color-secundario);
+    transform: translateX(4px);
+}
+
+.pasos li::marker {
+    color: var(--color-secundario-oscuro);
+    font-weight: 700;
+}
+
+/* Página de tema */
+.tema img {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    margin: 8px auto 16px;
+    border-radius: var(--radio);
+}
+
+code {
+    font-family: Consolas, "Courier New", monospace;
+    background-color: var(--color-fondo);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.92em;
+}
+
+.codigo {
+    background-color: var(--color-principal);
+    color: #F2F4F7;
+    padding: 20px;
+    border-radius: var(--radio);
+    overflow-x: auto;
+    line-height: 1.5;
+}
+
+.codigo code {
+    background: none;
+    padding: 0;
+    color: inherit;
+}
+
+/* Demostración de JavaScript */
+.demo {
+    background-color: var(--color-fondo);
+    border-left: 4px solid var(--color-secundario);
+    border-radius: var(--radio);
+    padding: 20px 24px;
+    margin-top: 32px;
+}
+
+.demo h2 {
+    margin-top: 0;
+}
+
+.mensaje {
+    font-weight: 600;
+}
+
+.mensaje.exito {
+    color: #067647;
+}
+
+button {
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    min-height: 48px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+/* Navegación entre temas */
+.navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.navegacion a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 12px 20px;
+    background-color: var(--color-blanco);
+    border: 2px solid var(--color-principal);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.navegacion a:hover {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Botón volver arriba */
+.volver-arriba {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 48px;
+    padding: 0;
+    border-radius: 50%;
+    box-shadow: var(--sombra);
+    display: none;
+}
+
+.volver-arriba.visible {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .contenedor {
+        padding: 0 16px;
+    }
+
+    main {
+        padding-top: 24px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .intro,
+    .indice,
+    .tema {
+        padding: 20px;
+    }
+
+    .tema img {
+        max-width: 100%;
+    }
+
+    .navegacion {
+        flex-direction: column;
+    }
+
+    .navegacion a {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .demo button {
+        width: 100%;
+    }
+}
