@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. Aplicar estilos con CSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <p class="marca">Tutorial Web Básico</p>
+            <nav aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <article class="tema">
+            <h1>2. Aplicar estilos con CSS</h1>
+            <img src="img/css.svg" alt="Ilustración representativa de CSS: una paleta de colores y bloques con estilos">
+
+            <section>
+                <h2>¿Qué es CSS?</h2>
+                <p>CSS (Cascading Style Sheets, hojas de estilo en cascada) es el lenguaje que define la apariencia de una página web. Mientras HTML dice qué es cada elemento, CSS dice cómo se ve.</p>
+            </section>
+
+            <section>
+                <h2>¿Para qué sirve?</h2>
+                <p>Con CSS se controlan los <strong>colores</strong> del texto y de los elementos, la <strong>tipografía</strong> (fuente, grosor y tamaño de letra), los <strong>tamaños</strong> de cajas e imágenes, los <strong>márgenes</strong> y espacios internos (<code>margin</code> y <code>padding</code>), los <strong>fondos</strong> y la <strong>distribución</strong> de los elementos en pantalla con herramientas como Flexbox o Grid. Además, con las <em>media queries</em> la página se adapta a computadores, tabletas y celulares.</p>
+                <p>Lo recomendable es escribir los estilos en un archivo externo (por ejemplo <code>css/estilos.css</code>) y enlazarlo desde cada página con la etiqueta <code>&lt;link&gt;</code>.</p>
+            </section>
+
+            <section>
+                <h2>Ejemplo de CSS</h2>
+                <pre class="codigo"><code>body {
+    font-family: Arial, sans-serif;
+    background-color: #F6F7F9;
+    color: #333333;
+    margin: 0;
+}
+
+h1 {
+    color: #0F1F3D;
+    font-size: 2rem;
+}
+
+.boton {
+    background-color: #0F1F3D;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border-radius: 8px;
+}</code></pre>
+            </section>
+        </article>
+
+        <nav class="navegacion" aria-label="Navegación entre temas">
+            <a href="tema1-html.html">Anterior: Crear la estructura con HTML</a>
+            <a href="index.html">Volver al tutorial</a>
+            <a href="tema3-javascript.html">Siguiente tema: Agregar interactividad con JavaScript</a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>Ometh Martinez Potes · Ficha 3336217 · Análisis y Desarrollo de Software · SENA <span class="anio">2026</span></p>
+        </div>
+    </footer>
+
+    <button type="button" class="volver-arriba" aria-label="Volver arriba">↑</button>
+    <script src="js/script.js"></script>
+</body>
+</html>

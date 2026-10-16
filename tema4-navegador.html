@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Visualizar y probar la página en el navegador</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <p class="marca">Tutorial Web Básico</p>
+            <nav aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <article class="tema">
+            <h1>4. Visualizar y probar la página en el navegador</h1>
+            <img src="img/navegador.svg" alt="Ilustración representativa de un navegador web mostrando una página con una marca de verificación">
+
+            <section>
+                <h2>Guardar y abrir los archivos</h2>
+                <p>Guarda todos los archivos (<code>Ctrl + S</code>) dentro de la misma carpeta del proyecto, respetando las subcarpetas <code>css</code>, <code>js</code> e <code>img</code>. Para ver la página basta con abrir <code>index.html</code> con doble clic: se abrirá en el navegador predeterminado.</p>
+            </section>
+
+            <section>
+                <h2>Usar Live Server en Visual Studio Code</h2>
+                <p>La extensión <strong>Live Server</strong> abre la página en un servidor local y la recarga automáticamente cada vez que guardas un cambio. Instálala desde la pestaña Extensiones de Visual Studio Code, haz clic derecho sobre <code>index.html</code> y elige <em>Open with Live Server</em>, o pulsa <em>Go Live</em> en la barra inferior.</p>
+            </section>
+
+            <section>
+                <h2>Verificar que todo funciona</h2>
+                <p><strong>Enlaces:</strong> haz clic en cada elemento de la lista y en los botones Anterior, Siguiente y Volver al tutorial; todos deben abrir la página correcta. <strong>CSS:</strong> si ves colores, tipografía y espaciado, la hoja de estilos cargó; si la página aparece en blanco y negro, revisa la ruta del <code>&lt;link&gt;</code>. <strong>JavaScript:</strong> en el tema 3 pulsa “Probar JavaScript” y comprueba que el mensaje cambia. Con <code>F12</code> puedes abrir la consola del navegador y verificar que no hay errores.</p>
+            </section>
+
+            <section>
+                <h2>Procedimiento de prueba</h2>
+                <ol class="pasos">
+                    <li>Abrir la carpeta en Visual Studio Code.</li>
+                    <li>Abrir index.html.</li>
+                    <li>Ejecutar con Live Server.</li>
+                    <li>Navegar por los temas.</li>
+                    <li>Comprobar estilos y JavaScript.</li>
+                </ol>
+            </section>
+        </article>
+
+        <nav class="navegacion" aria-label="Navegación entre temas">
+            <a href="tema3-javascript.html">Anterior: Agregar interactividad con JavaScript</a>
+            <a href="index.html">Volver al tutorial</a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>Ometh Martinez Potes · Ficha 3336217 · Análisis y Desarrollo de Software · SENA <span class="anio">2026</span></p>
+        </div>
+    </footer>
+
+    <button type="button" class="volver-arriba" aria-label="Volver arriba">↑</button>
+    <script src="js/script.js"></script>
+</body>
+</html>

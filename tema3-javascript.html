@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Agregar interactividad con JavaScript</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <p class="marca">Tutorial Web Básico</p>
+            <nav aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <article class="tema">
+            <h1>3. Agregar interactividad con JavaScript</h1>
+            <img src="img/javascript.svg" alt="Ilustración representativa de JavaScript: un cursor haciendo clic sobre un botón">
+
+            <section>
+                <h2>¿Qué es JavaScript?</h2>
+                <p>JavaScript es un lenguaje de programación que se ejecuta en el navegador. Permite que la página deje de ser solo contenido estático y responda a lo que hace la persona usuaria.</p>
+            </section>
+
+            <section>
+                <h2>¿Para qué se utiliza?</h2>
+                <p>Se usa para mostrar u ocultar elementos, validar formularios, cambiar textos e imágenes, crear menús, cargar datos y, en general, reaccionar a las acciones del usuario.</p>
+            </section>
+
+            <section>
+                <h2>Eventos básicos</h2>
+                <p>Un <strong>evento</strong> es algo que ocurre en la página: un clic (<code>click</code>), escribir en un campo (<code>input</code>), pasar el ratón por encima (<code>mouseover</code>) o terminar de cargar la página (<code>DOMContentLoaded</code>). Con <code>addEventListener</code> le decimos al navegador qué función ejecutar cuando ocurra ese evento:</p>
+                <pre class="codigo"><code>const boton = document.getElementById("boton-probar");
+const mensaje = document.getElementById("mensaje-js");
+
+boton.addEventListener("click", function () {
+    mensaje.textContent = "¡JavaScript está funcionando correctamente!";
+});</code></pre>
+            </section>
+
+            <section class="demo" aria-labelledby="titulo-demo">
+                <h2 id="titulo-demo">Pruébalo tú</h2>
+                <p id="mensaje-js" class="mensaje" aria-live="polite">Haz clic en el botón para probar JavaScript.</p>
+                <button type="button" id="boton-probar">Probar JavaScript</button>
+            </section>
+        </article>
+
+        <nav class="navegacion" aria-label="Navegación entre temas">
+            <a href="tema2-css.html">Anterior: Aplicar estilos con CSS</a>
+            <a href="index.html">Volver al tutorial</a>
+            <a href="tema4-navegador.html">Siguiente tema: Visualizar y probar en el navegador</a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>Ometh Martinez Potes · Ficha 3336217 · Análisis y Desarrollo de Software · SENA <span class="anio">2026</span></p>
+        </div>
+    </footer>
+
+    <button type="button" class="volver-arriba" aria-label="Volver arriba">↑</button>
+    <script src="js/script.js"></script>
+</body>
+</html>

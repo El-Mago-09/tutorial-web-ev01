@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Crear la estructura con HTML</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <p class="marca">Tutorial Web Básico</p>
+            <nav aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <article class="tema">
+            <h1>1. Crear la estructura con HTML</h1>
+            <img src="img/html.svg" alt="Ilustración representativa del lenguaje HTML: una ventana con etiquetas de código">
+
+            <section>
+                <h2>¿Qué es HTML?</h2>
+                <p>HTML (HyperText Markup Language) es el lenguaje de marcado que define la estructura de una página web. No es un lenguaje de programación: indica al navegador qué es cada parte del contenido, por ejemplo un título, un párrafo, una imagen o un enlace.</p>
+            </section>
+
+            <section>
+                <h2>¿Para qué sirve?</h2>
+                <p>Sirve para organizar el contenido de forma lógica. Con etiquetas semánticas como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> y <code>&lt;footer&gt;</code> se dividen las partes de la página, lo que facilita su lectura a las personas, a los buscadores y a los lectores de pantalla.</p>
+            </section>
+
+            <section>
+                <h2>Etiquetas básicas</h2>
+                <p>Cada elemento se escribe con una etiqueta de apertura y otra de cierre. Estas son algunas de las más usadas:</p>
+                <pre class="codigo"><code>&lt;h1&gt;Mi primera página&lt;/h1&gt;
+&lt;p&gt;Este es un párrafo de texto.&lt;/p&gt;
+&lt;img src="foto.jpg" alt="Descripción de la foto"&gt;
+&lt;a href="contacto.html"&gt;Ir a contacto&lt;/a&gt;</code></pre>
+                <p><code>&lt;h1&gt;</code> crea el título principal, <code>&lt;p&gt;</code> un párrafo, <code>&lt;img&gt;</code> muestra una imagen (con su texto alternativo <code>alt</code>) y <code>&lt;a&gt;</code> crea un enlace hacia otra página.</p>
+            </section>
+        </article>
+
+        <nav class="navegacion" aria-label="Navegación entre temas">
+            <a href="index.html">Volver al tutorial</a>
+            <a href="tema2-css.html">Siguiente tema: Aplicar estilos con CSS</a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>Ometh Martinez Potes · Ficha 3336217 · Análisis y Desarrollo de Software · SENA <span class="anio">2026</span></p>
+        </div>
+    </footer>
+
+    <button type="button" class="volver-arriba" aria-label="Volver arriba">↑</button>
+    <script src="js/script.js"></script>
+</body>
+</html>
